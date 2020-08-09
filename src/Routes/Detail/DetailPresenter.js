@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Loader from "../../Components/Loader";
+import Loader from "Components/Loader";
 import Helmet from "react-helmet";
 
 const Container = styled.div`
@@ -91,7 +91,7 @@ const DetailPresenter = ({ result, loading, error }) =>
         <Cover
           bgImage={
             result.poster_path
-              ? `https:image.tmdb.org/t/p/original${result.poster_path}`
+              ? `https://image.tmdb.org/t/p/original${result.poster_path}`
               : require("../../assets/noPosterSmall.png")
           }
         />
